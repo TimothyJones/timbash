@@ -18,15 +18,15 @@ function error() {
 }
 
 function success_banner() {
-    echo -e "${green}"
+    echo -en "${green}"
     banner $*
-    echo -e "${end_colour}"
+    echo -en "${end_colour}"
 }
 
 function fail_banner() {
-    echo -e "${red}"
+    echo -en "${red}"
     banner $*
-    echo -e "${end_colour}"
+    echo -en "${end_colour}"
 }
 
 function banner() {
