@@ -13,19 +13,18 @@ log "Start of script"
 error "Something went wrong"
 
 banner "Don't worry!"
+
+fail_banner "panic"
+
+success_banner "No, don't panic"
 ```
 Output:
 
-```
-[  ] Start of script
-[❌ ] Something went wrong
-****************
-* Don't worry! *
-****************
-```
+![Example output](http://i.imgur.com/XtYlZzr.jpg)
+
 ## Function reference
 
-* `log`: Prints everything passed to it, preceeded by `[  ]`. Coloured blue.
+* `log`: Prints everything passed to it, preceeded by `[ ]`. Coloured blue.
 * `error`: Prints everything passed to it, preceeded by `[❌ ]`. Coloured red.
 * `banner`: Prints everything passed to it, surrounded by `*` characters. Does not handle multiple lines.
 * `success_banner`: As `banner`, but green.
