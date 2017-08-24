@@ -2,8 +2,11 @@
 
 Here are some bash functions I find myself including often.
 
+## Script reference:
 
-## Example usage:
+* `bin/aws-mac.sh`: Exposes the AWS auth environment variables to mac applications
+
+## Logging example usage:
 
 ```bash
 #!/bin/bash -eu
@@ -25,7 +28,7 @@ Output:
 
 ![Example output](http://i.imgur.com/n2PD5HX.jpg)
 
-## Function reference
+### Function reference
 
 * `log`: Prints everything passed to it, preceeded by `[ ]`. Coloured blue.
 * `error`: Prints everything passed to it, preceeded by `[❌ ]`. Coloured red.
