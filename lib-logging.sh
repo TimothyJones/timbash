@@ -7,6 +7,7 @@
 blue='\033[1;34m'
 red='\033[0;31m'
 green='\033[0;32m'
+yellow='\033[93m'
 end_colour='\033[0m'
 
 function log() {
@@ -15,6 +16,10 @@ function log() {
 
 function error() {
     echo -e "${red}[❌ ] $* ${end_colour}"
+}
+
+function warn() {
+    echo -e "${yellow}[🔔 ] $* ${end_colour}"
 }
 
 function success_banner() {

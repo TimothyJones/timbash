@@ -5,11 +5,14 @@ Here are some bash functions I find myself including often.
 
 ## Example usage:
 
-```
-#!/bin/bash
-. lib-logging.sh
+```bash
+#!/bin/bash -eu
+
+# Source the logging script
+. `cd $(dirname "$0"); pwd`/lib-logging.sh
 
 log "Start of script"
+warn "Oh! Look!"
 error "Something went wrong"
 
 banner "Don't worry!"
@@ -20,7 +23,7 @@ success_banner "No, don't panic"
 ```
 Output:
 
-![Example output](http://i.imgur.com/XtYlZzr.jpg)
+![Example output](http://i.imgur.com/n2PD5HX.jpg)
 
 ## Function reference
 
