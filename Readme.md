@@ -29,6 +29,7 @@ Output:
 
 * `log`: Prints everything passed to it, preceeded by `[ ]`. Coloured blue.
 * `error`: Prints everything passed to it, preceeded by `[❌ ]`. Coloured red.
+* `warn`: Prints everything passed to it, preceeded by `[🔔 ]`. Coloured yellow.
 * `banner`: Prints everything passed to it, surrounded by `*` characters. Does not handle multiple lines.
 * `success_banner`: As `banner`, but green.
 * `fail_banner`: As `banner`, but red.
