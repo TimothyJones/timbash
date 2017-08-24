@@ -6,7 +6,9 @@ Here are some bash functions I find myself including often.
 
 * `bin/aws-mac.sh`: Exposes the AWS auth environment variables to mac applications
 
-## Logging example usage:
+## Logging library:
+
+This is a logging library for printing nice logs from scripts. Examples:
 
 ```bash
 #!/bin/bash -eu
