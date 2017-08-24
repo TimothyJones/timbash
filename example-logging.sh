@@ -1,7 +1,7 @@
 #!/bin/bash -eu
 
 # Source the logging script
-. `cd $(dirname "$0"); pwd`/lib-logging.sh
+. `cd $(dirname "$0"); pwd`/lib/lib-logging.sh
 
 log "Start of script"
 warn "Oh! Look!"
