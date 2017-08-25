@@ -28,13 +28,13 @@ success_banner "No, don't panic"
 ```
 Output:
 
-![Example output](http://i.imgur.com/n2PD5HX.jpg)
+![Example output](http://i.imgur.com/UnhKGf9.jpg)
 
 ### Function reference
 
-* `log`: Prints everything passed to it, preceeded by `[ ]`. Coloured blue.
-* `error`: Prints everything passed to it, preceeded by `[❌ ]`. Coloured red.
-* `warn`: Prints everything passed to it, preceeded by `[🔔 ]`. Coloured yellow.
+* `log`: Prints everything passed to it, preceeded by `[ ] <script name>`. Coloured blue.
+* `error`: Prints everything passed to it, preceeded by `[❌ ] <script name>`. Coloured red.
+* `warn`: Prints everything passed to it, preceeded by `[🔔 ] <script name>`. Coloured yellow.
 * `banner`: Prints everything passed to it, surrounded by `*` characters. Does not handle multiple lines.
 * `success_banner`: As `banner`, but green.
 * `fail_banner`: As `banner`, but red.
