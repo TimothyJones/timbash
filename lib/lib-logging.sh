@@ -25,23 +25,28 @@ function warn() {
 }
 
 function success_banner() {
-    echo -en "${green}"
-    banner $*
-    echo -en "${end_colour}"
+    echo -e "${green}`banner_border "$*"`${end_colour}"
+    echo -e "${green}`banner_mid    "$*"`${end_colour}"
+    echo -e "${green}`banner_border "$*"`${end_colour}"
 }
 
 function fail_banner() {
-    echo -en "${red}"
-    banner $*
-    echo -en "${end_colour}"
+    echo -e "${red}`banner_border "$*"`${end_colour}"
+    echo -e "${red}`banner_mid    "$*"`${end_colour}"
+    echo -e "${red}`banner_border "$*"`${end_colour}"
+}
+
+function banner_border() {
+    echo "`banner_mid "$*" | sed 's/./*/g'`"
+}
+
+# banner based on https://unix.stackexchange.com/a/250094
+function banner_mid() {
+    echo "* $* *"
 }
 
 function banner() {
-    # based on https://unix.stackexchange.com/a/250094
-    msg="* $* *"
-    edge=`echo  "$msg" | sed 's/./*/g'`
-    echo "$edge"
-    echo "$msg"
-    echo "$edge"
+    banner_border "$*"
+    banner_mid "$*"
+    banner_border "$*"
 }
-
