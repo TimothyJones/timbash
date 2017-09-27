@@ -14,7 +14,7 @@ This is a logging library for printing nice logs from scripts. Examples:
 #!/bin/bash -eu
 
 # Source the logging script
-. `cd $(dirname "$0"); pwd`/lib/lib-logging.sh
+. `cd $(dirname "${BASH_SOURCE[0]}"); pwd`/lib/lib-logging.sh
 
 log "Start of script"
 warn "Oh! Look!"
