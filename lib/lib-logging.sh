@@ -10,7 +10,7 @@ green='\033[0;32m'
 yellow='\033[93m'
 end_colour='\033[0m'
 
-TB_SCRIPTNAME=`basename "$0"`
+TB_SCRIPTNAME=$(basename "$0")
 
 function log() {
     echo -e "${blue}[  ] $TB_SCRIPTNAME: $* ${end_colour}"
