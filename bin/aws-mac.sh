@@ -1,5 +1,5 @@
 #!/bin/bash -eu                                          
-. "`cd $(dirname "$0"); pwd`"/../lib/lib-logging.sh
+. "`cd $(dirname "${BASH_SOURCE[0]}"); pwd`"/../lib/lib-logging.sh
 
 log "Exporting AWS auth tokens from enviornment to applications"
 
