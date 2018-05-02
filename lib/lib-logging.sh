@@ -17,11 +17,11 @@ function log() {
 }
 
 function error() {
-    echo -e "${red}[❌ ] $TB_SCRIPTNAME: $* ${end_colour}"
+    echo -e "${red}[❌] $TB_SCRIPTNAME: $* ${end_colour}"
 }
 
 function warn() {
-    echo -e "${yellow}[🔔 ] $TB_SCRIPTNAME: $* ${end_colour}"
+    echo -e "${yellow}[🔔] $TB_SCRIPTNAME: $* ${end_colour}"
 }
 
 function success_banner() {
