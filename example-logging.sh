@@ -6,6 +6,7 @@
 log "Start of script"
 warn "Oh! Look!"
 error "Something went wrong"
+success "But everything is ok!"
 
 banner "Don't worry!"
 

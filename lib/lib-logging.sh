@@ -13,16 +13,21 @@ end_colour='\033[0m'
 TB_SCRIPTNAME=$(basename "$0")
 
 function log() {
-    echo -e "${blue}[  ] $TB_SCRIPTNAME: $* ${end_colour}"
+  echo -e "${blue}   log${end_colour}     ($TB_SCRIPTNAME): $* ${end_colour}"
 }
 
 function error() {
-    echo -e "${red}[❌] $TB_SCRIPTNAME: $* ${end_colour}"
+  echo -e "${red}✘  error${end_colour}   ($TB_SCRIPTNAME): $* ${end_colour}"
 }
 
 function warn() {
-    echo -e "${yellow}[🔔] $TB_SCRIPTNAME: $* ${end_colour}"
+  echo -e "${yellow}🔔 warn ${end_colour}   ($TB_SCRIPTNAME): $* ${end_colour}"
 }
+
+function success() {
+  echo -e "${green}✔  success${end_colour} ($TB_SCRIPTNAME): $* ${end_colour}"
+}
+
 
 function success_banner() {
     echo -e "${green}`banner_border "$*"`${end_colour}"
