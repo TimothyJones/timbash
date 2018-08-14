@@ -30,21 +30,20 @@ if [ -z "${TIMLIB_LOGGING_SH:-}" ]; then
     echo -e "${green}✔  success${end_colour} ($TB_SCRIPTNAME): $* ${end_colour}"
   }
 
-
   function success_banner() {
-      echo -e "${green}`banner_border "$*"`${end_colour}"
-      echo -e "${green}`banner_mid    "$*"`${end_colour}"
-      echo -e "${green}`banner_border "$*"`${end_colour}"
+      echo -e "${green}$(banner_border "$*")${end_colour}"
+      echo -e "${green}$(banner_mid    "$*")${end_colour}"
+      echo -e "${green}$(banner_border "$*")${end_colour}"
   }
 
   function fail_banner() {
-      echo -e "${red}`banner_border "$*"`${end_colour}"
-      echo -e "${red}`banner_mid    "$*"`${end_colour}"
-      echo -e "${red}`banner_border "$*"`${end_colour}"
+      echo -e "${red}$(banner_border "$*")${end_colour}"
+      echo -e "${red}$(banner_mid    "$*")${end_colour}"
+      echo -e "${red}$(banner_border "$*")${end_colour}"
   }
 
   function banner_border() {
-      echo "`banner_mid "$*" | sed 's/./*/g'`"
+      banner_mid "$*" | sed 's/./*/g'
   }
 
   # banner based on https://unix.stackexchange.com/a/250094
